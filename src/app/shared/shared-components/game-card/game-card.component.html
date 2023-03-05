@@ -1,0 +1,17 @@
+<mat-card class="app-card" *ngFor="let game of games">
+  <mat-card-header>
+    <mat-card-title>{{game.title.toUpperCase()}}</mat-card-title>
+    <mat-card-subtitle>{{game.genre.toLowerCase()}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image class="app-card-img" [src]=game.img alt="Game photo">
+  <mat-card-content>{{game.content}}</mat-card-content>
+  <mat-card-actions class="app-card-actions">
+    <button mat-icon-button aria-label="icon button with a heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-button color="accent" [style.display]="game.sold ? 'block' : 'none'">SOLD</button>
+  </mat-card-actions>
+</mat-card>
+
+
+
