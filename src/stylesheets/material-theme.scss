@@ -1,0 +1,13 @@
+@import '~@angular/material/theming';
+//@use "sass:map";
+
+@include mat-core();
+
+$angyGame-primary: mat-palette($mat-purple, 900);
+$angyGame-accent: mat-palette($mat-pink, A400);
+$angyGame-warn: mat-palette($mat-red);
+
+//theme consists of configurations for individual
+$angyGame-theme: mat-light-theme($angyGame-primary, $angyGame-accent, $angyGame-warn);
+
+@include angular-material-theme($angyGame-theme);

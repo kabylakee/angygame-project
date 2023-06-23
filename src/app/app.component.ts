@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-basic';
+  public title: string = 'AngyGames';
+  public showFiller: boolean = false;
 }
